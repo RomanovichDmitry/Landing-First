@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17.2px;
+    line-height: auto;
+    color: #515151;
+    line-height: auto;
+}
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #515151;
+}
+
+.container {
+    width: 1020px;
+    margin: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* /* align-items: baseline; Выравнивание элементов по линии текста Можно было написать проще */
+    font-size: 13.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo-link {
+    position: relative;
+    font-size: 31.2px;
+    width: 200px;
+    padding: 23px 0px 19px 36px;
+    font-family: 'Nunito Sans', sans-serif;;
+}
+.logo-link::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 21px;
+
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/logo.png);
+    background-repeat: no-repeat;
+}
+.navigation-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 37px 23px 30px 75px;
+
+    width: 620px;
+    opacity: 67%;
+}
+.login-link {
+    width: 100px;
+    background-color: #bcda5c;
+    border-radius: 33px;
+    text-align: center;
+
+    border: 1px solid #8b8c8d;
+    margin-top: 25px;
+    height: 39px;
+    padding: 9px;
+    color: #515151;
+}
+.login-link span {
+    opacity: 81%;
+    color: #fff;
+}
+.sliders {
+    margin: auto;
+    background:#000 url(/img/Layer\ 15.jpg) no-repeat;
+    width: 1300px;
+    height: 570px;
+}
+.sliders .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.3); 
+    width: 1300px;
+    height: 570px;
+}
+.SliderH1 {
+    font-size: 49.2px;
+    font-weight: 600;
+    color: #fff;
+}
+.SliderH2 {
+    font-size: 35.2px;
+    font-weight: 400;
+    color: #fff;
+}
