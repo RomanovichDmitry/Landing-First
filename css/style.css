@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 17.2px;
     line-height: auto;
-    color: #515151;
+    color: rgba(81, 81, 81, 0.7);;
     line-height: auto;
 }
 a,
@@ -64,7 +64,6 @@ a:active {
     border-radius: 33px;
     text-align: center;
 
-    border: 1px solid #8b8c8d;
     margin-top: 25px;
     height: 39px;
     padding: 9px;
@@ -79,24 +78,134 @@ a:active {
     background:#000 url(/img/Layer\ 15.jpg) no-repeat;
     width: 1300px;
     height: 570px;
+    margin-bottom: 100px;
 }
 .sliders .overlay {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.2); 
     width: 1300px;
     height: 570px;
 }
 .SliderH1 {
+    
     font-size: 49.2px;
     font-weight: 600;
     color: #fff;
+    line-height: 77px;
 }
 .SliderH2 {
     font-size: 35.2px;
     font-weight: 400;
     color: #fff;
+    line-height: 77px;
+}
+.SliderButton {
+    border: none;
+    border-radius: 15px;
+    width: 254px;
+    font-size: 19.2px;
+    background: #99c50a;
+    height: 73px;
+    color: #fff;
+    margin-top: 50px;
+}
+.btns {
+    position: absolute;
+    right: 154px;
+    bottom: 45px;
+}
+.vissualy-hidden:not(:focus):not(:active),
+input[type="radio"].vissualy-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.btns label {
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    cursor: pointer;
+}
+.btns label:first-child {background-image: url(/img/back.png); top: -23px; right: 29px;}
+.btns label:last-child {background-image: url(/img/next.png); top: -23px; right: 29px; right: -16px;}
+
+.text-block-1 {
+    text-align: center;
+    margin-bottom: 145px;
+}
+.text-block-1 p {
+    margin-bottom: 33px;
+    padding: 0px 40px;
+    line-height: auto;
+}
+.text-block-1 h3 {
+    font-size: 31.2px;
+    text-transform: uppercase;
+    color: #515151;
+    line-height: 50px;
+    margin-bottom: 52px;
+}
+.text-block-1 img {
+    margin-bottom: 31px;
+}
+.job-list {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 34px;
+}
+
+.marker-jobs {
+    position: relative;
+    font-size: 33.2px;
+    color:#656565;
+}
+.job-list label::before {
+    content: "";
+    position: absolute;
+
+    line-height: 45px;
+    font-size: 20.2px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    background-color: #5f5f5f;
+    border-radius: 50%;
+    top: 0px;
+    left: -75px;
+
+}
+.job-list .simple-job::before {
+    content: "1";
+    color: white;
+    background-color: #add136;
+}
+.job-list .transparent-job::before {
+    content: "2";
+    color: white;
+}
+.job-list .collaborative-job::before {
+    content: "3";
+    color: white;
+}
+.liner {
+    margin: auto;
+    height: 2px;
+    width: 95%;
+    background: linear-gradient(to right, #add136 0%, #add136 25%, #828c95 25%);
 }
