@@ -208,4 +208,65 @@ input[type="radio"].vissualy-hidden {
     height: 2px;
     width: 95%;
     background: linear-gradient(to right, #add136 0%, #add136 25%, #828c95 25%);
+    margin-bottom: 56px;
 }
+.job-text   {
+    display: flex;
+    padding-left: 109px;
+    padding-right: 40px;
+    margin-bottom: 105px;
+}
+.job-icon {
+    margin-right: 104px;
+    margin-top: 30px;
+}
+.job-text h4 {
+    margin-bottom: 26px;
+    color: #add136;
+    font-size: 25.2px;
+}
+.job-text p {
+    line-height: 28px;
+}
+.find {
+    background: linear-gradient(to right, #e2f8ff 0%, #e2f8ff 50%, #f5f9eb 50%);
+}
+.find-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 47px;
+}
+.find-con {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+.find-text {
+    width: 260px;
+}
+.find-text h5 {
+    font-size: 23.2px;
+    color: #515151;
+    margin-bottom: 35px;
+}
+.find-text p {
+    font-size: 17.2px;
+    color: #515151;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.find-con img {
+    align-self: center;
+}
+.find-btn {
+    padding: 15px 26px;
+    font-family: inherit;
+    font-size: 14.28px;
+    font-weight: 600;
+    color: #ffffff;
+    border:none;
+    border-radius: 9px;
+}
+.blue-btn {background-color: #26a6d1;}
+.green-btn {background-color: #add136;}
