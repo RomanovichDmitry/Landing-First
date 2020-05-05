@@ -11,6 +11,9 @@ body {
     color: rgba(81, 81, 81, 0.7);;
     line-height: auto;
 }
+section {
+    background: #fff url(/img/bg-bottom.png) no-repeat 50% 100%;
+}
 a,
 a:visited,
 a:active {
@@ -300,4 +303,190 @@ input[type="radio"].vissualy-hidden {
     background-color: white;
     border: 1px solid #515151;
     align-self: center;
+}
+.product {
+    width: 302px;
+    height: 521px;
+    margin-right: 39px;
+    background-color: rgba(249, 249, 249, 0.7);
+    border: 1px solid rgba(229, 229, 229, 0.7);
+    border-radius: 10px;
+}
+.product:nth-child(3) {
+    margin-right: 0px;
+}
+.product-new {
+    position: relative;
+}
+.product-new::before {
+    content: "";
+    position: absolute;
+
+    background: url(/img/NEW.png) no-repeat;
+    width: 73px;  
+    height: 73px;
+}
+.items-price {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 18px;
+    margin-bottom: 75px;
+}
+.product-description {
+    padding: 13px 24px;
+}
+.product-description h3 {
+    font-size: 17.2px;
+    padding-left: 1px;
+    color: #484848;
+    margin-bottom: 15px;
+}
+.product-description p {
+    font-size: 13.2px;
+    line-height: 25px;
+}
+.range {
+    margin-top: 15px;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(to right, #add136 0%, #add136 30%, #e3e3e3 30%);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.found {
+    font-size: 13.2px;
+    color: #8d8d8d;
+    position: relative;
+}
+.found span:nth-child(2) {
+    float: right;
+}
+.found::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    opacity: 71%;
+    width: 100%;
+    height: 1px;
+    background-color:#8d8d8d;
+}
+.product a {
+    font-size: 15.2px;
+    color: rgba(72, 72, 72, 0.6);
+    font-weight: 600;
+    display: block;
+    padding-top: 24px;
+    float: right;
+    padding-right: 55px;
+    position: relative;
+}
+.product a::after {
+    content: "";
+    position: absolute;
+    background: url(/img/Shape.png) no-repeat;
+    right: 32px;
+    width: 13px;
+    height: 16px;
+}
+.part-end {
+    text-align: center;
+}
+.part-end h2 {
+    font-size: 39.2px;
+    color: #9ec02d;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+.part-end p {
+    line-height: 25px;
+    padding: 0px 57px 0px 49px;
+    font-size: 19.2px;
+    color: #949494;
+    margin-bottom: 95px;
+}
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 38px;
+    padding-left: 33px;
+}
+.review-block {
+    width: 397px;
+    align-self: flex-start;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 19px 43px 23px 32px;
+    border-radius: 12px;
+    margin-bottom: 152px;
+}
+.review-block h3 {
+    font-size: 21.2px;
+    font-weight: 600;
+    color: #9ec02d;
+    margin-bottom: 10px;
+    margin-left: -19px;
+}
+.review-block p {
+    font-size: 13.2px;
+    color:#848484;
+    line-height: 23px;
+}
+.review-block::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -20px;
+    left: 80px;
+    border-top: 23px solid white;
+    border-right: 24px solid transparent;	
+}
+
+.review-block::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -90px;
+    left: 47px;
+    border-radius: 10px;
+}
+.review-block:nth-child(1)::before {background: #fff url(/img/beckham.png);}
+.review-block:nth-child(2)::before {background: #fff url(/img/backham2.png);}
+
+.name-review::after {
+    content: "David Beckham";
+    position: absolute;
+    bottom: -70px;
+    left: 124px;
+    font-size: 15.2px;
+    color:#494949;
+    font-weight: 600;
+}
+.company {
+    width: 1028px;
+    height: 45px;
+    background-image: url(/img/company.png);
+    background-repeat: no-repeat;
+    margin-bottom: 42px;
+}
+.main-footer {
+    padding-top: 43px;
+}
+.linear-footer {
+    width: 100%;
+    height: 1px;
+    background-color:rgba(73, 73, 73, 0.11);
+}
+.copyright {
+    text-align: center;
+    font-size: 13.2px;
+    color: #848484;
+    margin-bottom: 20px;
+}
+.copyright p {
+    padding-top: 22px;
 }
